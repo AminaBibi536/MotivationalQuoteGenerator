@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivational Quote Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Motivational Quote Generator</h1>
+
+
+
+        <div id="welcome-section">
+            <p id="welcome-quote">"Just One Positive Thought In The Morning Can Change Your Whole Day"</p>
+        </div>
+
+        <div id="category-section">
+            <h2>Select a category</h2>
+            <button class="category-button" data-category="success">Success</button>
+            <button class="category-button" data-category="selflove">Self-Love</button>
+            <button class="category-button" data-category="education">Education</button>
+            <button class="category-button" data-category="mentalhealth">Mental Health</button>
+        </div>
+
+
+        <div id="favorite-section">
+            <button id="open-favorites">Favorite Quotes</button>
+        </div>
+
+
+        <div id="quote-box" class="hidden">
+            <p id="quote">Select a category to generate a quotes!</p>
+            <button id="generate-quote">Generate Quote</button>
+            <div class="actions">
+                <button id="save-favorite">Save as Favorite</button>
+                <button id="share-quote">Share Quote</button>
+            </div>
+        </div>
+
+
+        <div id="favorite-box" class="hidden">
+            <h2>Favorite Quotes</h2>
+            <ul id="favorite-quotes-list"></ul>
+            <button id="close-favorites">Close</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
